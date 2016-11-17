@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        | LWin | RWin |       | LScr | RScr   |
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      | LAlt |       | RAlt |        |      |
- *                                 | Space| LCtl |------|       |------|  RCtl  |Space |
+ *                                 | LCtl |Space |------|       |------| Space  | RCtl |
  *                                 |      |      | LGui |       | RGui |        |      |
  *                                 `--------------------'       `----------------------'
  */
@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
                                               LALT(KC_LEFT),  LALT(KC_RIGHT),
                                                               KC_LALT,
-                                              KC_SPC,KC_LCTL,KC_LGUI,
+                                              KC_LCTL,KC_SPC,KC_LGUI,
 
         // right hand
              KC_MINS,     KC_6,   KC_7,      KC_8,      KC_9,      KC_0,        KC_EQL,
@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
              LCTL(KC_LEFT),  LCTL(KC_RIGHT),
              KC_RALT,
-             KC_RGUI,KC_RCTL, KC_SPC
+             KC_RGUI, KC_SPC, KC_RCTL
     ),
 /* Keymap 1: Media and mouse keys
  *
