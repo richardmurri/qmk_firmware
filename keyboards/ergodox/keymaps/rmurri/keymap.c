@@ -149,9 +149,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 3: Window movement
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * |        |      |      |      |      |      |      |           |      |Lnch6 |Lnch7 |Lnch8 |Lnch9 |Lnch0 |        |
+ * |        |      |      |      |      |      |      |           |      |Lnch6 |Lnch7 |Lnch8 |Lnch9 |Lnch0 | Lock   |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * |        |      |      |      |      |      |      |           | Lock |MWinL |MWinD |MWinU |MWinR |      |        |
+ * |        |      |      |      |      |      |      |           | Repo2|MWinL |MWinD |MWinU |MWinR |      |        |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |        |      |      |      |      |      |------|           |------| WinL | WinD | WinU | WinR |      |        |
  * |--------+------+------+------+------+------|      |           | Repo |------+------+------+------+------+--------|
@@ -180,11 +180,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                    KC_TRNS,
                                KC_TRNS,  KC_TRNS,  KC_TRNS,
        // right hand
-       KC_TRNS,             RGUI(RALT(KC_6)),    RGUI(RALT(KC_7)),    RGUI(RALT(KC_8)),    RGUI(RALT(KC_9)),     RGUI(RALT(KC_0)),  KC_TRNS,
-       RGUI(RALT(KC_BSPC)), RGUI(RALT(KC_LEFT)), RGUI(RALT(KC_DOWN)), RGUI(RALT(KC_UP)),   RGUI(RALT(KC_RIGHT)), KC_TRNS,           KC_TRNS,
-                            RALT(KC_LEFT),       RALT(KC_DOWN),       RALT(KC_UP),         RALT(KC_RGHT),        KC_TRNS,           KC_TRNS,
-       RGUI(RALT(KC_ENT)),  LCTL(KC_LEFT),       KC_NO,               RGUI(RALT(KC_PGUP)), LCTL(KC_RIGHT),       KC_TRNS,           KC_TRNS,
-                                                 RGUI(RALT(KC_1)),    RGUI(RALT(KC_2)),    RGUI(RALT(KC_3)),     RGUI(RALT(KC_4)),  RGUI(RALT(KC_5)),
+       KC_TRNS,                  RGUI(RALT(KC_6)),    RGUI(RALT(KC_7)),    RGUI(RALT(KC_8)),    RGUI(RALT(KC_9)),     RGUI(RALT(KC_0)),  RGUI(RALT(KC_BSPC)),
+       LCTL(RGUI(RALT(KC_ENT))), RGUI(RALT(KC_LEFT)), RGUI(RALT(KC_DOWN)), RGUI(RALT(KC_UP)),   RGUI(RALT(KC_RIGHT)), KC_TRNS,           KC_TRNS,
+                                 RALT(KC_LEFT),       RALT(KC_DOWN),       RALT(KC_UP),         RALT(KC_RGHT),        KC_TRNS,           KC_TRNS,
+       RGUI(RALT(KC_ENT)),       LCTL(KC_LEFT),       KC_NO,               RGUI(RALT(KC_PGUP)), LCTL(KC_RIGHT),       KC_TRNS,           KC_TRNS,
+                                                      RGUI(RALT(KC_1)),    RGUI(RALT(KC_2)),    RGUI(RALT(KC_3)),     RGUI(RALT(KC_4)),  RGUI(RALT(KC_5)),
        KC_TRNS, KC_TRNS,
        KC_TRNS,
        KC_TRNS, KC_TRNS, LCTL(KC_F2)
