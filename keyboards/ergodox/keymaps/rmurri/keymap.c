@@ -19,7 +19,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------| ~L3  |           | Ret  |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  | RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |  L1  |  L2  |  Alt |  L3  | Caps |                                       |  [   |   ]  |  Alt |   ]  | ~L2  |
+ *   |  L1  |  L2  |  Alt |  L3  | Caps |                                       |  [   |   ]  |  Alt |  L1  | ~L2  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,---------------.
  *                                        | LWin | RWin |       | LScr | RScr   |
@@ -41,16 +41,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSFT,      KC_Z,         KC_X,           KC_C,     KC_V,      KC_B,   MO(3),
         TG(1),        TG(2),        KC_LALT,        TG(3),    KC_CAPS,
 
-                                              LALT(KC_LEFT),  LALT(KC_RIGHT),
-                                                              KC_LALT,
-                                              KC_LCTL,KC_SPC,KC_LGUI,
+                                              LALT(KC_LEFT),   LALT(KC_RIGHT),
+                                                               KC_LALT,
+                                              KC_LCTL, KC_SPC, KC_LGUI,
 
         // right hand
              KC_MINS,     KC_6,   KC_7,      KC_8,      KC_9,      KC_0,        KC_EQL,
              KC_BSPC,     KC_Y,   KC_U,      KC_I,      KC_O,      KC_P,        KC_BSLS,
                           KC_H,   KC_J,      KC_K,      KC_L,      KC_SCLN,     KC_QUOT,
              KC_ENT,      KC_N,   KC_M,      KC_COMM,   KC_DOT,    KC_SLSH,     KC_RSFT,
-                                  KC_LBRC,   KC_RBRC,   KC_LALT,   KC_RBRC,     MO(2),
+                                  KC_LBRC,   KC_RBRC,   KC_LALT,   TG(1),     MO(2),
 
              LCTL(KC_LEFT),  LCTL(KC_RIGHT),
              KC_RALT,
